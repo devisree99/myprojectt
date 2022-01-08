@@ -1,0 +1,141 @@
+GIT BASH:
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the aiswarya branch
+  push:
+    branches: 
+      - 'master' 
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout 
+        uses: actions/checkout@v2
+
+
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/whalesimple:latest
+
+
+KUBERNETES:
+POD.YAML:
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo
+spec:
+ containers:
+  - name: testpod
+    image: alpine:3.3
+    command: ["ping", "8.8.8.8"]  
+
+
+PS C:\Users\HP\Desktop\Kubernetes> kubectl apply -f pod.yaml
+pod/demo created
+PS C:\Users\HP\Desktop\Kubernetes> kubectl get pods
+NAME   READY   STATUS             RESTARTS     AGE
+demo   0/1     CrashLoopBackOff   1 (7s ago)   9s
+PS C:\Users\HP\Desktop\Kubernetes> kubectl delete -f pod.yaml
+pod "demo" deleted
+
+BB.YAML:
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bb-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      bb: web
+  template:
+    metadata:
+      labels:
+        bb: web
+    spec:
+      containers:
+      - name: bb-site
+        image: devi77/getting-started
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bb-entrypoint
+  namespace: default
+spec:
+  type: NodePort
+  selector:
+    bb: web
+  ports:
+  - port: 3000
+    targetPort: 3000
+    nodePort: 30001            
+
+PS C:\Users\HP\Desktop\Kubernetes> kubectl apply -f bb.yaml     
+deployment.apps/bb-demo created
+service/bb-entrypoint created
+PS C:\Users\HP\Desktop\Kubernetes> kubectl get deployments
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+bb-demo   1/1     1            1           20s
+PS C:\Users\HP\Desktop\Kubernetes> kubectl get services
+NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+bb-entrypoint   NodePort    10.102.143.80   <none>        3000:30001/TCP   41s
+kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP          2d
+PS C:\Users\HP\Desktop\Kubernetes> kubectl delete -f bb.yaml
+deployment.apps "bb-demo" deleted
+service "bb-entrypoint" delete
+
+PS C:\Users\HP\Desktop\Kubernetes> docker swarm leave 
+Error response from daemon: You are attempting to leave the swarm on a node that is participating as a manager. Removing the last manager erases all current state of the swarm. Use `--force` to ignore this message.
+PS C:\Users\HP\Desktop\Kubernetes> docker swarm leave --force
+Node left the swarm.
+PS C:\Users\HP\Desktop\Kubernetes> docker swarm init
+Swarm initialized: current node (hx40vij8rr99n7lrciyxy3f1m) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token SWMTKN-1-3nmpn7p3d06bgzngrcmpijycig64no07z5i08c4ugq62syqt3i-eivkjo04clkhal0fy0n24r8w2 192.168.65.3:2377
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+PS C:\Users\HP\Desktop\Kubernetes> docker service create --name demo alpine:3.5 ping 8.8.8.8
+mmo20atws9acmqlwx83abeoil
+overall progress: 1 out of 1 tasks
+1/1: running   [==================================================>]
+verify: Service converged
+PS C:\Users\HP\Desktop\Kubernetes> docker service ps demo
+ID             NAME      IMAGE        NODE             DESIRED STATE   CURRENT STATE            ERROR     PORTS
+x4vmunwy4429   demo.1    alpine:3.5   docker-desktop   Running         Running 21 seconds ago
+PS C:\Users\HP\Desktop\Kubernetes> docker service rm demo 
+       FINISH--------------------------
+
+

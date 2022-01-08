@@ -1,0 +1,1546 @@
+devi77@LAPTOP-18KCPA72:~$ su - devi
+Password:
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.10.16.3-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Jan  8 06:40:03 IST 2022
+
+  System load:  0.29               Processes:             10
+  Usage of /:   0.8% of 250.98GB   Users logged in:       0
+  Memory usage: 34%                IPv4 address for eth0: 172.31.130.11
+  Swap usage:   0%
+
+89 updates can be applied immediately.
+39 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+This message is shown once a day. To disable it please create the
+/home/devi/.hushlogin file.
+devi@LAPTOP-18KCPA72:~$ pwd
+/home/devi
+devi@LAPTOP-18KCPA72:~$ ls
+tempy
+devi@LAPTOP-18KCPA72:~$ cd tempy
+devi@LAPTOP-18KCPA72:~/tempy$ ls
+hob.txt  hobb.txt  hobbb.txt
+devi@LAPTOP-18KCPA72:~/tempy$ mkdir temp
+devi@LAPTOP-18KCPA72:~/tempy$ cd temp
+devi@LAPTOP-18KCPA72:~/tempy/temp$ rm temp
+rm: cannot remove 'temp': No such file or directory
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cd ..
+devi@LAPTOP-18KCPA72:~/tempy$ rm temp
+rm: cannot remove 'temp': Is a directory
+devi@LAPTOP-18KCPA72:~/tempy$ ls
+hob.txt  hobb.txt  hobbb.txt  temp
+devi@LAPTOP-18KCPA72:~/tempy$ cd temp
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cd ..
+devi@LAPTOP-18KCPA72:~/tempy$ cd ..
+devi@LAPTOP-18KCPA72:~$ cd /
+devi@LAPTOP-18KCPA72:/$ pwd
+/
+devi@LAPTOP-18KCPA72:/$ ls
+bin  boot  dev  etc  home  init  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+devi@LAPTOP-18KCPA72:/$ cd media
+devi@LAPTOP-18KCPA72:/media$ ls
+devi@LAPTOP-18KCPA72:/media$ cd ..
+devi@LAPTOP-18KCPA72:/$  cd home
+devi@LAPTOP-18KCPA72:/home$ ls
+catty1  catty2  dev1  dev2  devi  devi77  myuser  rihan  riya  salim  simp  simp2  simpletest  simpletest2  temp  timjag  userr1  userr2  varun
+devi@LAPTOP-18KCPA72:/home$ cd simp
+devi@LAPTOP-18KCPA72:/home/simp$ cd myuser
+-bash: cd: myuser: No such file or directory
+devi@LAPTOP-18KCPA72:/home/simp$ cd ..
+devi@LAPTOP-18KCPA72:/home$ cd ..
+devi@LAPTOP-18KCPA72:/$ cd
+devi@LAPTOP-18KCPA72:~$ cd /
+devi@LAPTOP-18KCPA72:/$ ls
+bin  boot  dev  etc  home  init  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+devi@LAPTOP-18KCPA72:/$ cd usr
+devi@LAPTOP-18KCPA72:/usr$ cd ..
+devi@LAPTOP-18KCPA72:/$ ls
+bin  boot  dev  etc  home  init  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+devi@LAPTOP-18KCPA72:/$ cd var
+devi@LAPTOP-18KCPA72:/var$ ls
+backups  cache  crash  lib  local  lock  log  mail  opt  run  snap  spool  tmp
+devi@LAPTOP-18KCPA72:/var$ cd local
+devi@LAPTOP-18KCPA72:/var/local$ cd ..
+devi@LAPTOP-18KCPA72:/var$ cd ..
+devi@LAPTOP-18KCPA72:/$ cd
+devi@LAPTOP-18KCPA72:~$ cd tempy
+devi@LAPTOP-18KCPA72:~/tempy$ ls
+hob.txt  hobb.txt  hobbb.txt  temp
+devi@LAPTOP-18KCPA72:~/tempy$ cd temp
+devi@LAPTOP-18KCPA72:~/tempy/temp$ ls
+devi@LAPTOP-18KCPA72:~/tempy/temp$ echo "here i am create new text file" > echo.txt
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat echo.txt
+here i am create new text file
+devi@LAPTOP-18KCPA72:~/tempy/temp$ echo "it is very intrest to learn" > echo1.txt
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat echo1.txt
+it is very intrest to learn
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat echo.txt echo1.txt
+here i am create new text file
+it is very intrest to learn
+devi@LAPTOP-18KCPA72:~/tempy/temp$ echo "first i wish welcome to linux session" >> echo.txt
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat echo.txt
+here i am create new text file
+first i wish welcome to linux session
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat echo.txt echo1.txt
+here i am create new text file
+first i wish welcome to linux session
+it is very intrest to learn
+devi@LAPTOP-18KCPA72:~/tempy/temp$ echo "HI LINUX SESSION"
+HI LINUX SESSION
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat *.txt
+here i am create new text file
+first i wish welcome to linux session
+it is very intrest to learn
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat *m*
+cat: '*m*': No such file or directory
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat *.txt > echo2.txt
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat echo2.txt
+here i am create new text file
+first i wish welcome to linux session
+it is very intrest to learn
+devi@LAPTOP-18KCPA72:~/tempy/temp$ ls
+echo.txt  echo1.txt  echo2.txt
+devi@LAPTOP-18KCPA72:~/tempy/temp$ mkdir -p parentfld/childfld
+devi@LAPTOP-18KCPA72:~/tempy/temp$ ls
+echo.txt  echo1.txt  echo2.txt  parentfld
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cd parentfld
+devi@LAPTOP-18KCPA72:~/tempy/temp/parentfld$ cd childfld
+devi@LAPTOP-18KCPA72:~/tempy/temp/parentfld/childfld$ cd ..
+devi@LAPTOP-18KCPA72:~/tempy/temp/parentfld$ cd ..
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cd ..
+devi@LAPTOP-18KCPA72:~/tempy$ cd
+devi@LAPTOP-18KCPA72:~$ ls
+tempy
+devi@LAPTOP-18KCPA72:~$ ls > fsam.txt
+devi@LAPTOP-18KCPA72:~$ cat fsam.txt
+fsam.txt
+tempy
+devi@LAPTOP-18KCPA72:~$ cd tempy
+devi@LAPTOP-18KCPA72:~/tempy$ cd temp
+devi@LAPTOP-18KCPA72:~/tempy/temp$ ls
+echo.txt  echo1.txt  echo2.txt  parentfld
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat my* > mix.txt
+cat: 'my*': No such file or directory
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cp echo1.txt echo2.txt
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat echo2.txt
+it is very intrest to learn
+devi@LAPTOP-18KCPA72:~/tempy/temp$ ls
+echo.txt  echo1.txt  echo2.txt  mix.txt  parentfld
+devi@LAPTOP-18KCPA72:~/tempy/temp$ mv echo2.txt 2echo.txt
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cat 2echo.txt
+it is very intrest to learn
+
+devi@LAPTOP-18KCPA72:~/tempy/temp$ cd ..
+devi@LAPTOP-18KCPA72:~/tempy$ mkdir hobsdir
+devi@LAPTOP-18KCPA72:~/tempy$ cd hobsdir
+devi@LAPTOP-18KCPA72:~/tempy/hobsdir$ echo " DEVI,HAPPY,SMILY,CHOCOLATE,TEDDY,DAD LITTLE PRINCESS " > trainees.txt
+devi@LAPTOP-18KCPA72:~/tempy/hobsdir$ cat trainees.txt
+ DEVI,HAPPY,SMILY,CHOCOLATE,TEDDY,DAD LITTLE PRINCESS
+devi@LAPTOP-18KCPA72:~/tempy/hobsdir$ echo "abdul,babitha,manoj,bindhu" >> trainees.txt
+devi@LAPTOP-18KCPA72:~/tempy/hobsdir$ cat trainees.txt
+ DEVI,HAPPY,SMILY,CHOCOLATE,TEDDY,DAD LITTLE PRINCESS
+abdul,babitha,manoj,bindhu
+devi@LAPTOP-18KCPA72:~/tempy/hobsdir$ whoami
+devi
+devi@LAPTOP-18KCPA72:~/tempy/hobsdir$ who
+devi@LAPTOP-18KCPA72:~/tempy/hobsdir$ id
+uid=1022(devi) gid=1023(devi) groups=1023(devi)
+devi@LAPTOP-18KCPA72:~/tempy/hobsdir$ w
+ 07:22:46 up  1:19,  0 users,  load average: 0.67, 0.43, 0.33
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+devi@LAPTOP-18KCPA72:~/tempy/hobsdir$ passwd
+Changing password for devi.
+Current password:
+New password:
+Retype new password:
+You must choose a longer password
+New password:
+Retype new password:
+You must choose a longer password
+New password:
+Retype new password:
+passwd: password updated successfully
+devi@LAPTOP-18KCPA72:~$ su - devi77
+Password:
+total 284
+drwxr-xr-x  5 devi77 devi77 4096 Jan  5 17:10 Hashmum
+drwxr-xr-x  2 devi77 devi77 4096 Dec 28 17:58 ZING
+drwxr-xr-x  3 devi77 devi77 4096 Dec 28 17:35 Zing
+drwxrwxr-x  3 devi77 devi77 4096 Dec 17 15:22 abcimplex
+drwxr-xr-x  2 devi77 devi77 4096 Dec 17 12:32 abclmpex
+-rwxr-xr-x  1 devi77 devi77  167 Dec 13 11:55 animal.sh
+-rwxrwxr--  1 devi77 devi77   94 Dec 20 15:16 args.sh
+-rwxr-xr-x  1 devi77 devi77  152 Dec 13 14:59 bestfriends.sh
+-rw-r--r--  1 devi77 devi77  115 Dec 13 15:02 besties.sh
+drwxrwxr-x  3 devi77 devi77 4096 Dec 20 16:43 bootcamp
+-rw-r--r--  1 devi77 devi77   85 Dec 15 17:15 creat.yml
+drwxr-xr-x  2 devi77 devi77 4096 Dec 10 10:12 dear
+-rwxr-xr-x  1 devi77 devi77   59 Dec 10 17:24 dear.sh
+-rwxr-xr-x  1 devi77 devi77   75 Dec 13 13:01 details.sh
+-rwxr-xr-x  1 devi77 devi77  195 Dec 13 13:21 detailss.sh
+drwxr-xr-x 10 devi77 devi77 4096 Dec 17 14:22 devi
+-rw-r--r--  1 devi77 devi77   82 Dec 16 15:22 devi_orchestrate.yml
+drwxr-xr-x  5 devi77 devi77 4096 Dec 16 15:29 devi_playbook
+drwxr-xr-x 10 devi77 devi77 4096 Dec 15 17:40 devii
+-rw-r--r--  1 devi77 devi77   94 Dec 16 10:39 devii.yml
+-rw-r--r--  1 devi77 devi77   85 Dec 16 11:11 deviii_orchestrate.yml
+-rw-r--r--  1 devi77 devi77  134 Dec 15 17:26 employee.yml
+-rw-rw-r--  1 devi77 devi77   16 Jan  7 17:17 enjoy.txt
+-rwxr-xr-x  1 devi77 devi77  186 Dec 13 14:00 eveodd.sh
+-rw-r--r--  1 devi77 devi77  101 Dec 15 17:29 extention
+-rwxr-xr-x  1 devi77 devi77  252 Dec 13 14:40 favfood.sh
+-rwxr-xr-x  1 devi77 devi77  231 Dec 13 14:46 favfruit.sh
+-rwxr-xr-x  1 devi77 devi77  229 Dec 16 18:00 fib.sh
+-rwxr-xr-x  1 devi77 devi77  196 Dec 16 17:54 fibonacci.sh
+-rwxr-xr-x  1 devi77 devi77  350 Dec 13 10:42 friendscript.sh
+-rwxr-xr-x  1 devi77 devi77  203 Dec 13 17:50 func.sh
+-rwxr-xr-x  1 devi77 devi77  153 Dec 13 17:55 funcc.sh
+-rwxr-xr-x  1 devi77 devi77   88 Dec 13 17:22 function.sh
+-rwxrwxr-x  1 devi77 devi77  196 Dec 13 17:36 functions.sh
+-rwxr-xr-x  1 devi77 devi77   20 Dec 10 17:18 funny.txt
+-rw-r--r--  1 devi77 devi77  115 Dec 13 15:54 gg.sh
+-rw-r--r--  1 devi77 devi77  126 Dec 13 15:56 ggg.sh
+-rw-r--r--  1 devi77 devi77    6 Dec 13 10:24 haiscript.sh
+-rwxrwxr--  1 devi77 devi77  149 Dec 20 15:27 ifelse.sh
+-rwxr-xr-x  1 devi77 devi77  214 Dec 13 13:08 info.sh
+-rwxrwxr--  1 devi77 devi77  263 Dec 13 13:41 inform.sh
+-rwxrwxr-x  1 devi77 devi77  223 Dec 13 13:31 information.sh
+drwxrwxr-x  2 devi77 devi77 4096 Dec 28 17:21 initialZing
+drwxr-xr-x  2 devi77 devi77 4096 Dec 17 14:07 initialgalaxy
+-rwxrwxr--  1 devi77 devi77  105 Dec 20 15:22 input.sh
+-rw-r--r--  1 devi77 devi77   90 Dec 16 12:15 main.yml
+-rw-r--r--  1 devi77 devi77  104 Dec 17 09:38 message.yml
+-rw-r--r--  1 devi77 devi77  114 Dec 13 15:49 mul.sh
+-rw-r--r--  1 devi77 devi77  132 Dec 13 16:00 mull.sh
+-rwxr-xr-x  1 devi77 devi77  120 Dec 13 15:39 multi.sh
+-rwxr-xr-x  1 devi77 devi77  167 Dec 13 14:17 multiple.sh
+-rwxr-xrwx  1 devi77 devi77   37 Dec 10 10:23 myinfo.txt
+-rwxr-xr-x  1 devi77 devi77   82 Dec 13 14:51 odd.sh
+-rwxr-xr-x  1 devi77 devi77   79 Dec 13 15:10 oddd.sh
+-rwxr-xr-x  1 devi77 devi77  134 Dec 13 15:36 odddnum.sh
+-rwxr-xr-x  1 devi77 devi77  142 Dec 13 15:27 oddnum.sh
+-rw-r--r--  1 devi77 devi77  139 Jan  6 17:11 pod.yaml
+-rwxr-xr-x  1 devi77 devi77  220 Dec 17 09:44 prime.sh
+-rwxr-xr-x  1 devi77 devi77  155 Dec 17 09:51 primenumbers.sh
+-rwxr-xr-x  1 devi77 devi77   85 Dec 13 15:22 ss.sh
+-rw-r--r--  1 devi77 devi77  319 Dec 16 16:02 start-tomcat
+drwxr-xr-x  2 devi77 devi77 4096 Dec 20 16:33 temp
+drwxrwxr-x  2 devi77 devi77 4096 Dec 20 15:45 tempy
+-rw-r--r--  1 devi77 devi77  305 Dec 16 11:20 tomcat
+-rw-r--r--  1 devi77 devi77   23 Dec 28 16:46 ubuntu.txt
+drwxr-xr-x  2 devi77 devi77 4096 Dec 17 12:35 user1
+drwxr-xr-x  2 devi77 devi77 4096 Dec 17 12:36 user2
+drwxr-xr-x  2 devi77 devi77 4096 Dec 17 12:36 user3
+drwxr-xr-x  2 devi77 devi77 4096 Dec 17 12:36 user4
+-rw-r--r--  1 devi77 devi77   54 Dec 13 14:33 while.sh
+drwxr-xr-x  2 devi77 devi77 4096 Dec 28 16:47 zing
+.              .config                    ZING            besties.sh   devi                    enjoy.txt     friendscript.sh  ggg.sh          initialgalaxy  multiple.sh  prime.sh         ubuntu.txt
+..             .landscape                 Zing            bootcamp     devi_orchestrate.yml    eveodd.sh     func.sh          haiscript.sh    input.sh       myinfo.txt   primenumbers.sh  user1
+.ansible       .local                     abcimplex       creat.yml    devi_playbook           extention     funcc.sh         ifelse.sh       main.yml       odd.sh       ss.sh            user2
+.bash_aliases  .motd_shown                abclmpex        dear         devii                   favfood.sh    function.sh      info.sh         message.yml    oddd.sh      start-tomcat     user3
+.bash_history  .profile                   animal.sh       dear.sh      devii.yml               favfruit.sh   functions.sh     inform.sh       mul.sh         odddnum.sh   temp             user4
+.bash_logout   .sudo_as_admin_successful  args.sh         details.sh   deviii_orchestrate.yml  fib.sh        funny.txt        information.sh  mull.sh        oddnum.sh    tempy            while.sh
+.bashrc        Hashmum                    bestfriends.sh  detailss.sh  employee.yml            fibonacci.sh  gg.sh            initialZing     multi.sh       pod.yaml     tomcat           zing
+alias ll='ls -alF'
+-bash: alias: =: not found
+-bash: alias: ls-l: not found
+alias la='ls -A'
+-bash: alias: =: not found
+-bash: alias: la -a: not found
+-bash: alias: lh: not found
+-bash: alias: =: not found
+-bash: alias: ls -lh: not found
+hi: command not found
+
+Command 'how' not found, did you mean:
+
+  command 'hoz' from deb hoz (1.65-3)
+  command 'hop' from deb hopenpgp-tools (0.22-2build2)
+  command 'show' from deb mailutils-mh (1:3.7-2.1)
+  command 'show' from deb mmh (0.4-2)
+  command 'show' from deb nmh (1.7.1-6)
+  command 'hot' from deb hopenpgp-tools (0.22-2build2)
+  command 'cow' from deb fl-cow (0.6-4.2)
+  command 'sow' from deb ruby-hoe (3.21.0+dfsg1-1)
+
+Try: sudo apt install <deb name>
+
+devi77@LAPTOP-18KCPA72:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,devi77
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:devi77
+fax:x:21:
+voice:x:22:
+cdrom:x:24:devi77
+floppy:x:25:devi77
+tape:x:26:
+sudo:x:27:devi77,myuser,userr1
+audio:x:29:devi77
+dip:x:30:devi77
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:devi77
+sasl:x:45:
+plugdev:x:46:devi77
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:devi77
+lxd:x:118:
+devi77:x:1000:
+uset0:x:1001:
+user0:x:1002:
+user1:x:1003:
+user2:x:1004:
+user3:x:1005:
+varun:x:1006:
+salim:x:1007:
+rihan:x:1008:
+riya:x:1009:
+timjag:x:1010:
+myuser:x:1011:
+devops:x:1012:
+dev1:x:1013:
+dev2:x:1014:
+userr1:x:1015:
+userr2:x:1016:
+catty1:x:1017:
+catty2:x:1018:
+simpletest:x:1019:
+simpletest2:x:1020:
+simp:x:1021:
+simp2:x:1022:
+devi:x:1023:
+kavi:x:1024:
+devi77@LAPTOP-18KCPA72:~$ su - devi
+Password:
+devi@LAPTOP-18KCPA72:~$ ls -il
+total 8
+97467 -rw-rw-r-- 1 devi devi   15 Jan  8 07:00 fsam.txt
+97379 drwxrwxr-x 4 devi devi 4096 Jan  8 07:10 tempy
+devi@LAPTOP-18KCPA72:~$ ls -a
+.  ..  .bash_history  .bash_logout  .bashrc  .landscape  .local  .motd_shown  .profile  fsam.txt  tempy
+devi@LAPTOP-18KCPA72:~$ ls -l
+total 8
+-rw-rw-r-- 1 devi devi   15 Jan  8 07:00 fsam.txt
+drwxrwxr-x 4 devi devi 4096 Jan  8 07:10 tempy
+devi@LAPTOP-18KCPA72:~$ chmod o-w fsam.txt
+devi@LAPTOP-18KCPA72:~$ ls -lh fsam.txt
+-rw-rw-r-- 1 devi devi 15 Jan  8 07:00 fsam.txt
+devi@LAPTOP-18KCPA72:~$ touch myemptyfile
+devi@LAPTOP-18KCPA72:~$ ls
+fsam.txt  myemptyfile  tempy
+devi@LAPTOP-18KCPA72:~$ cat myemptyfile
+devi@LAPTOP-18KCPA72:~$ ls -alh myemptyfile
+-rw-rw-r-- 1 devi devi 0 Jan  8 07:38 myemptyfile
+devi@LAPTOP-18KCPA72:~$ nano fsam.txt
+devi@LAPTOP-18KCPA72:~$ cat fsam.txt
+fsam.txt
+tempy
+HI GNU FILE
+LOOKING NICE
+
+
+
+
+devi@LAPTOP-18KCPA72:~$ rm--fsam.txt
+rm--fsam.txt: command not found
+devi@LAPTOP-18KCPA72:~$ rm --fsam.txt
+rm: unrecognized option '--fsam.txt'
+Try 'rm --help' for more information.
+devi@LAPTOP-18KCPA72:~$ find .-name*.txt
+find: ‘.-name*.txt’: No such file or directory
+devi@LAPTOP-18KCPA72:~$ find . -name*.txt
+find: unknown predicate `-name*.txt'
+devi@LAPTOP-18KCPA72:~$ ls
+fsam.txt  myemptyfile  tempy
+devi@LAPTOP-18KCPA72:~$ mkdir temm
+devi@LAPTOP-18KCPA72:~$ ls
+fsam.txt  myemptyfile  temm  tempy
+devi@LAPTOP-18KCPA72:~$ rm -r temm
+devi@LAPTOP-18KCPA72:~$ ls
+fsam.txt  myemptyfile  tempy
+devi@LAPTOP-18KCPA72:~$ cd tempy
+devi@LAPTOP-18KCPA72:~/tempy$ ls
+hob.txt  hobb.txt  hobbb.txt  hobsdir  temp
+devi@LAPTOP-18KCPA72:~/tempy$ find . -name *hob.txt
+./hob.txt
+devi@LAPTOP-18KCPA72:~/tempy$ find . -name *.
+.
+devi@LAPTOP-18KCPA72:~/tempy$ find . -name *.*
+find: paths must precede expression: `hobb.txt'
+find: possible unquoted pattern after predicate `-name'?
+devi@LAPTOP-18KCPA72:~/tempy$ cd ..
+devi@LAPTOP-18KCPA72:~$ cd /home
+devi@LAPTOP-18KCPA72:/home$ find . -name *.*
+.
+./salim/.landscape
+./salim/.landscape/sysinfo.log
+./salim/.bash_history
+./salim/.motd_shown
+./salim/.profile
+./salim/.bash_logout
+./salim/.bashrc
+./salim/.local
+find: ‘./salim/.local/share’: Permission denied
+./devi/.landscape
+./devi/.landscape/sysinfo.log
+./devi/.bash_history
+./devi/tempy/temp/echo1.txt
+./devi/tempy/temp/mix.txt
+./devi/tempy/temp/echo.txt
+./devi/tempy/temp/2echo.txt
+./devi/tempy/hobsdir/trainees.txt
+./devi/tempy/hobbb.txt
+./devi/tempy/hobb.txt
+./devi/tempy/hob.txt
+./devi/.motd_shown
+./devi/fsam.txt
+./devi/.profile
+./devi/.bash_logout
+./devi/.bashrc
+./devi/.local
+./simpletest2/.landscape
+./simpletest2/.landscape/sysinfo.log
+./simpletest2/.bash_history
+./simpletest2/.motd_shown
+./simpletest2/.profile
+./simpletest2/.bash_logout
+./simpletest2/.bashrc
+./myuser/.landscape
+./myuser/.landscape/sysinfo.log
+./myuser/.bash_history
+./myuser/.motd_shown
+./myuser/.profile
+./myuser/.bash_logout
+./myuser/.bashrc
+./timjag/.landscape
+./timjag/.landscape/sysinfo.log
+./timjag/.bash_history
+./timjag/.motd_shown
+./timjag/.profile
+./timjag/.bash_logout
+./timjag/.bashrc
+./timjag/.local
+find: ‘./timjag/.local/share’: Permission denied
+./timjag/jogdir/timinfo.txt
+./timjag/jogdir/clientinfo.py
+./riya/.landscape
+./riya/.landscape/sysinfo.log
+./riya/.bash_history
+./riya/.motd_shown
+./riya/.profile
+./riya/.bash_logout
+./riya/.bashrc
+./userr1/.landscape
+./userr1/.landscape/sysinfo.log
+./userr1/.bash_history
+./userr1/.motd_shown
+./userr1/.profile
+./userr1/.bash_logout
+./userr1/.bashrc
+./simp2/.landscape
+./simp2/.landscape/sysinfo.log
+./simp2/.bash_history
+./simp2/.motd_shown
+./simp2/.profile
+./simp2/.bash_logout
+./simp2/.bashrc
+./varun/.landscape
+./varun/.landscape/sysinfo.log
+./varun/.bash_history
+./varun/.motd_shown
+./varun/.profile
+./varun/.bash_logout
+./varun/.bashrc
+./rihan/.landscape
+./rihan/.landscape/sysinfo.log
+./rihan/.bash_history
+./rihan/.motd_shown
+./rihan/.profile
+./rihan/.bash_logout
+./rihan/abccom/complete.txt
+./rihan/.bashrc
+./rihan/.local
+find: ‘./rihan/.local/share’: Permission denied
+./devi77/ss.sh
+./devi77/devi/tasks/main.yml
+./devi77/devi/defaults/main.yml
+./devi77/devi/meta/main.yml
+./devi77/devi/tests/test.yml
+./devi77/devi/galaxyinfor.txt
+./devi77/devi/README.md
+./devi77/devi/handlers/main.yml
+./devi77/devi/vars/main.yml
+./devi77/devi/.travis.yml
+./devi77/oddd.sh
+./devi77/func.sh
+./devi77/deviii_orchestrate.yml
+./devi77/.landscape
+./devi77/.landscape/sysinfo.log
+./devi77/funny.txt
+./devi77/.sudo_as_admin_successful
+./devi77/bootcamp/perms.txt
+./devi77/bootcamp/allperms.txt
+./devi77/bootcamp/tempyy/allperms.txt
+./devi77/bootcamp/empty.txt
+./devi77/mul.sh
+./devi77/detailss.sh
+./devi77/.ansible
+find: ‘./devi77/.ansible/galaxy_cache’: Permission denied
+find: ‘./devi77/.ansible/tmp’: Permission denied
+./devi77/mull.sh
+./devi77/.bash_history
+./devi77/message.yml
+./devi77/gg.sh
+./devi77/favfruit.sh
+./devi77/myinfo.txt
+./devi77/besties.sh
+./devi77/favfood.sh
+./devi77/devii/tasks/main.yml
+./devi77/devii/defaults/main.yml
+./devi77/devii/meta/main.yml
+./devi77/devii/tests/test.yml
+./devi77/devii/README.md
+./devi77/devii/handlers/main.yml
+./devi77/devii/vars/main.yml
+./devi77/devii/.travis.yml
+./devi77/.motd_shown
+./devi77/ifelse.sh
+./devi77/.config
+find: ‘./devi77/.config’: Permission denied
+./devi77/devi_orchestrate.yml
+./devi77/multi.sh
+./devi77/main.yml
+./devi77/multiple.sh
+./devi77/args.sh
+./devi77/odddnum.sh
+./devi77/primenumbers.sh
+./devi77/info.sh
+./devi77/pod.yaml
+./devi77/.profile
+./devi77/prime.sh
+./devi77/.bash_logout
+./devi77/funcc.sh
+./devi77/devi_playbook/start-tomcat/tasks/main.yml
+./devi77/devi_playbook/start-tomcat/defaults/main.yml
+./devi77/devi_playbook/start-tomcat/meta/main.yml
+./devi77/devi_playbook/start-tomcat/tests/test.yml
+./devi77/devi_playbook/start-tomcat/README.md
+./devi77/devi_playbook/start-tomcat/handlers/main.yml
+./devi77/devi_playbook/start-tomcat/vars/main.yml
+./devi77/devi_playbook/start-tomcat/.travis.yml
+./devi77/devi_playbook/devi_orchestrate.yml
+./devi77/devi_playbook/main.yml
+./devi77/devi_playbook/install/tasks/main.yml
+./devi77/devi_playbook/install/defaults/main.yml
+./devi77/devi_playbook/install/meta/main.yml
+./devi77/devi_playbook/install/tests/test.yml
+./devi77/devi_playbook/install/README.md
+./devi77/devi_playbook/install/handlers/main.yml
+./devi77/devi_playbook/install/vars/main.yml
+./devi77/devi_playbook/install/.travis.yml
+./devi77/devi_playbook/install-tomcat/tasks/main.yml
+./devi77/devi_playbook/install-tomcat/defaults/main.yml
+./devi77/devi_playbook/install-tomcat/meta/main.yml
+./devi77/devi_playbook/install-tomcat/tests/test.yml
+./devi77/devi_playbook/install-tomcat/README.md
+./devi77/devi_playbook/install-tomcat/start-tomcat/tasks/main.yml
+./devi77/devi_playbook/install-tomcat/start-tomcat/defaults/main.yml
+./devi77/devi_playbook/install-tomcat/start-tomcat/meta/main.yml
+./devi77/devi_playbook/install-tomcat/start-tomcat/tests/test.yml
+./devi77/devi_playbook/install-tomcat/start-tomcat/README.md
+./devi77/devi_playbook/install-tomcat/start-tomcat/handlers/main.yml
+./devi77/devi_playbook/install-tomcat/start-tomcat/vars/main.yml
+./devi77/devi_playbook/install-tomcat/start-tomcat/.travis.yml
+./devi77/devi_playbook/install-tomcat/handlers/main.yml
+./devi77/devi_playbook/install-tomcat/vars/main.yml
+./devi77/devi_playbook/install-tomcat/.travis.yml
+./devi77/devii.yml
+./devi77/ggg.sh
+./devi77/Hashmum/Hashinfor.txt
+./devi77/Hashmum/initialhashmum/Hashinfor.txt
+./devi77/Hashmum/InitialHashmum/Hashinfor.txt
+./devi77/Hashmum/InitialHashmum/hashinfor.txt
+./devi77/inform.sh
+./devi77/bestfriends.sh
+./devi77/.bashrc
+./devi77/haiscript.sh
+./devi77/.bash_aliases
+./devi77/creat.yml
+./devi77/fib.sh
+./devi77/enjoy.txt
+./devi77/animal.sh
+./devi77/.local
+find: ‘./devi77/.local/share’: Permission denied
+./devi77/function.sh
+./devi77/initialgalaxy/galaxyinfor.txt
+./devi77/functions.sh
+./devi77/friendscript.sh
+./devi77/while.sh
+./devi77/initialZing/Zinginfor.txt
+./devi77/oddnum.sh
+./devi77/employee.yml
+./devi77/information.sh
+./devi77/fibonacci.sh
+./devi77/eveodd.sh
+./devi77/details.sh
+./devi77/input.sh
+./devi77/odd.sh
+./devi77/dear.sh
+./devi77/dear/myinfo.txt
+./devi77/ubuntu.txt
+./catty1/.landscape
+./catty1/.landscape/sysinfo.log
+./catty1/.bash_history
+./catty1/.motd_shown
+./catty1/.profile
+./catty1/.bash_logout
+./catty1/.bashrc
+./simpletest/.landscape
+./simpletest/.landscape/sysinfo.log
+./simpletest/initialhashmum/hashinfor.txt
+./simpletest/.bash_history
+./simpletest/.motd_shown
+./simpletest/.profile
+./simpletest/.bash_logout
+./simpletest/.bashrc
+./simpletest/.local
+find: ‘./simpletest/.local/share’: Permission denied
+./dev2/.landscape
+./dev2/.landscape/sysinfo.log
+./dev2/.bash_history
+./dev2/.motd_shown
+./dev2/.profile
+./dev2/.bash_logout
+./dev2/.bashrc
+./dev2/.local
+find: ‘./dev2/.local/share’: Permission denied
+./catty2/.landscape
+./catty2/.landscape/sysinfo.log
+./catty2/.bash_history
+./catty2/.motd_shown
+./catty2/.profile
+./catty2/.bash_logout
+./catty2/.bashrc
+./dev1/.landscape
+./dev1/.landscape/sysinfo.log
+./dev1/.bash_history
+./dev1/.motd_shown
+./dev1/.profile
+./dev1/.bash_logout
+./dev1/.bashrc
+./userr2/.landscape
+./userr2/.landscape/sysinfo.log
+./userr2/.bash_history
+./userr2/.motd_shown
+./userr2/.profile
+./userr2/.bash_logout
+./userr2/.bashrc
+./simp/.landscape
+./simp/.landscape/sysinfo.log
+./simp/.bash_history
+./simp/.motd_shown
+./simp/.profile
+./simp/.bash_logout
+./simp/.bashrc
+
+devi77@LAPTOP-18KCPA72:~$ sudo apt install
+[sudo] password for devi77:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 89 not upgraded.
+devi77@LAPTOP-18KCPA72:~$ sudo apt update
+Get:1 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease [18.0 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:5 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 Packages [1128 B]
+Get:6 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1109 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1445 kB]
+Get:9 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main Translation-en [756 B]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [202 kB]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9104 B]
+Get:12 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [609 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [289 kB]
+Get:14 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [86.8 kB]
+Get:15 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [536 B]
+Get:16 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [675 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.7 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [663 kB]
+Get:19 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [114 kB]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [13.0 kB]
+Get:21 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.8 kB]
+Get:22 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [536 B]
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [94.6 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [532 B]
+Get:25 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [892 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [195 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20.0 kB]
+Get:28 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.8 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [620 B]
+Get:30 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [42.0 kB]
+Get:31 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [10.0 kB]
+Get:32 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [864 B]
+Get:33 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [19.2 kB]
+Get:34 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [13.3 kB]
+Get:35 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [656 B]
+Fetched 6921 kB in 5s (1336 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+98 packages can be upgraded. Run 'apt list --upgradable' to see them.
+devi77@LAPTOP-18KCPA72:~$ sudo apt upgrade
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  python3-jmespath python3-kerberos python3-ntlm-auth python3-requests-kerberos python3-requests-ntlm python3-winrm python3-xmltodict
+The following packages will be upgraded:
+  accountsservice alsa-ucm-conf ansible ansible-core apport bind9-dnsutils bind9-host bind9-libs busybox-initramfs busybox-static ca-certificates cloud-init cloud-initramfs-copymods cloud-initramfs-dyn-netconf
+  command-not-found cpio curl distro-info-data git git-man libaccountsservice0 libasound2 libasound2-data libcurl3-gnutls libcurl4 libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
+  libdrm2 libgcrypt20 libgl1-mesa-dri libglapi-mesa libglx-mesa0 libicu66 libllvm12 libnetplan0 libnss-systemd libnss3 libntfs-3g883 libpam-modules libpam-modules-bin libpam-runtime libpam-systemd libpam0g
+  libprocps8 libpulse0 libpulsedsp libpython3.8 libpython3.8-minimal libpython3.8-stdlib libseccomp2 libssh-4 libssl1.1 libsystemd0 libtdb1 libudev1 libudisks2-0 linux-base mesa-vulkan-drivers netplan.io
+  ntfs-3g open-vm-tools openssh-client openssh-server openssh-sftp-server openssl overlayroot procps pulseaudio-utils python-apt-common python3-apport python3-apt python3-commandnotfound python3-problem-report
+  python3-update-manager python3.8 python3.8-minimal rsync snapd squashfs-tools systemd systemd-sysv systemd-timesyncd tzdata ubuntu-advantage-tools udev udisks2 ufw update-manager-core update-notifier-common
+  vim vim-common vim-runtime vim-tiny wget xxd
+98 upgraded, 7 newly installed, 0 to remove and 0 not upgraded.
+38 standard security updates
+Need to get 36.2 MB/136 MB of archives.
+After this operation, 14.7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 ansible-core all 2.12.1-1ppa~focal [941 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libnss-systemd amd64 245.4-4ubuntu3.14 [95.8 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 udev amd64 245.4-4ubuntu3.14 [1365 kB]
+Get:4 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 ansible all 5.1.0-1ppa~focal [21.4 MB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libudev1 amd64 245.4-4ubuntu3.14 [77.7 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd-sysv amd64 245.4-4ubuntu3.14 [10.3 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd-timesyncd amd64 245.4-4ubuntu3.14 [28.1 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpam-systemd amd64 245.4-4ubuntu3.14 [186 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libseccomp2 amd64 2.5.1-1ubuntu1~20.04.2 [42.5 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd amd64 245.4-4ubuntu3.14 [3807 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsystemd0 amd64 245.4-4ubuntu3.14 [270 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8 amd64 3.8.10-0ubuntu1~20.04.2 [1625 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8 amd64 3.8.10-0ubuntu1~20.04.2 [387 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-stdlib amd64 3.8.10-0ubuntu1~20.04.2 [1675 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8-minimal amd64 3.8.10-0ubuntu1~20.04.2 [1900 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-minimal amd64 3.8.10-0ubuntu1~20.04.2 [717 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 update-notifier-common all 3.192.30.10 [133 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 command-not-found all 20.04.5 [5244 B]
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-commandnotfound all 20.04.5 [10.2 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssh-sftp-server amd64 1:8.2p1-4ubuntu0.4 [51.5 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssh-server amd64 1:8.2p1-4ubuntu0.4 [377 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssh-client amd64 1:8.2p1-4ubuntu0.4 [671 kB]
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpulsedsp amd64 1:13.99.1-1ubuntu3.13 [21.7 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 pulseaudio-utils amd64 1:13.99.1-1ubuntu3.13 [55.0 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpulse0 amd64 1:13.99.1-1ubuntu3.13 [262 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-jmespath all 0.9.4-2ubuntu1 [21.5 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-kerberos amd64 1.1.14-3.1build1 [22.6 kB]
+Get:28 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-ntlm-auth all 1.1.0-1 [19.6 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-requests-kerberos all 0.12.0-2 [11.9 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-requests-ntlm all 1.1.0-1 [6004 B]
+Get:31 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-xmltodict all 0.12.0-1 [12.6 kB]
+Get:32 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-winrm all 0.3.0-2 [21.7 kB]
+Fetched 36.2 MB in 37s (991 kB/s)
+Extracting templates from packages: 100%
+Preconfiguring packages ...
+(Reading database ... 74845 files and directories currently installed.)
+Preparing to unpack .../libpam0g_1.3.1-5ubuntu4.3_amd64.deb ...
+Unpacking libpam0g:amd64 (1.3.1-5ubuntu4.3) over (1.3.1-5ubuntu4.2) ...
+Setting up libpam0g:amd64 (1.3.1-5ubuntu4.3) ...
+(Reading database ... 74845 files and directories currently installed.)
+Preparing to unpack .../libpam-modules-bin_1.3.1-5ubuntu4.3_amd64.deb ...
+Unpacking libpam-modules-bin (1.3.1-5ubuntu4.3) over (1.3.1-5ubuntu4.2) ...
+Setting up libpam-modules-bin (1.3.1-5ubuntu4.3) ...
+(Reading database ... 74845 files and directories currently installed.)
+Preparing to unpack .../libpam-modules_1.3.1-5ubuntu4.3_amd64.deb ...
+Unpacking libpam-modules:amd64 (1.3.1-5ubuntu4.3) over (1.3.1-5ubuntu4.2) ...
+Setting up libpam-modules:amd64 (1.3.1-5ubuntu4.3) ...
+(Reading database ... 74845 files and directories currently installed.)
+Preparing to unpack .../libnss-systemd_245.4-4ubuntu3.14_amd64.deb ...
+Unpacking libnss-systemd:amd64 (245.4-4ubuntu3.14) over (245.4-4ubuntu3.11) ...
+Preparing to unpack .../udev_245.4-4ubuntu3.14_amd64.deb ...
+Unpacking udev (245.4-4ubuntu3.14) over (245.4-4ubuntu3.11) ...
+Preparing to unpack .../libudev1_245.4-4ubuntu3.14_amd64.deb ...
+Unpacking libudev1:amd64 (245.4-4ubuntu3.14) over (245.4-4ubuntu3.11) ...
+Setting up libudev1:amd64 (245.4-4ubuntu3.14) ...
+(Reading database ... 74846 files and directories currently installed.)
+Preparing to unpack .../systemd-sysv_245.4-4ubuntu3.14_amd64.deb ...
+Unpacking systemd-sysv (245.4-4ubuntu3.14) over (245.4-4ubuntu3.11) ...
+Preparing to unpack .../systemd-timesyncd_245.4-4ubuntu3.14_amd64.deb ...
+Unpacking systemd-timesyncd (245.4-4ubuntu3.14) over (245.4-4ubuntu3.11) ...
+Preparing to unpack .../libpam-runtime_1.3.1-5ubuntu4.3_all.deb ...
+Unpacking libpam-runtime (1.3.1-5ubuntu4.3) over (1.3.1-5ubuntu4.2) ...
+Setting up libpam-runtime (1.3.1-5ubuntu4.3) ...
+(Reading database ... 74846 files and directories currently installed.)
+Preparing to unpack .../libpam-systemd_245.4-4ubuntu3.14_amd64.deb ...
+Unpacking libpam-systemd:amd64 (245.4-4ubuntu3.14) over (245.4-4ubuntu3.11) ...
+Preparing to unpack .../libseccomp2_2.5.1-1ubuntu1~20.04.2_amd64.deb ...
+Unpacking libseccomp2:amd64 (2.5.1-1ubuntu1~20.04.2) over (2.5.1-1ubuntu1~20.04.1) ...
+Setting up libseccomp2:amd64 (2.5.1-1ubuntu1~20.04.2) ...
+(Reading database ... 74846 files and directories currently installed.)
+Preparing to unpack .../systemd_245.4-4ubuntu3.14_amd64.deb ...
+Unpacking systemd (245.4-4ubuntu3.14) over (245.4-4ubuntu3.11) ...
+Preparing to unpack .../libsystemd0_245.4-4ubuntu3.14_amd64.deb ...
+Unpacking libsystemd0:amd64 (245.4-4ubuntu3.14) over (245.4-4ubuntu3.11) ...
+Setting up libsystemd0:amd64 (245.4-4ubuntu3.14) ...
+(Reading database ... 74846 files and directories currently installed.)
+Preparing to unpack .../0-libpython3.8_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+Unpacking libpython3.8:amd64 (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04) ...
+Preparing to unpack .../1-libssl1.1_1.1.1f-1ubuntu2.10_amd64.deb ...
+Unpacking libssl1.1:amd64 (1.1.1f-1ubuntu2.10) over (1.1.1f-1ubuntu2.5) ...
+Preparing to unpack .../2-python3.8_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+Unpacking python3.8 (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04) ...
+Preparing to unpack .../3-libpython3.8-stdlib_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+Unpacking libpython3.8-stdlib:amd64 (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04) ...
+Preparing to unpack .../4-python3.8-minimal_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+Unpacking python3.8-minimal (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04) ...
+Preparing to unpack .../5-libpython3.8-minimal_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+Unpacking libpython3.8-minimal:amd64 (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04) ...
+Preparing to unpack .../6-libgcrypt20_1.8.5-5ubuntu1.1_amd64.deb ...
+Unpacking libgcrypt20:amd64 (1.8.5-5ubuntu1.1) over (1.8.5-5ubuntu1) ...
+Setting up libgcrypt20:amd64 (1.8.5-5ubuntu1.1) ...
+(Reading database ... 74846 files and directories currently installed.)
+Preparing to unpack .../00-ntfs-3g_1%3a2017.3.23AR.3-3ubuntu1.1_amd64.deb ...
+Unpacking ntfs-3g (1:2017.3.23AR.3-3ubuntu1.1) over (1:2017.3.23AR.3-3ubuntu1) ...
+Preparing to unpack .../01-libntfs-3g883_1%3a2017.3.23AR.3-3ubuntu1.1_amd64.deb ...
+Unpacking libntfs-3g883 (1:2017.3.23AR.3-3ubuntu1.1) over (1:2017.3.23AR.3-3ubuntu1) ...
+Preparing to unpack .../02-rsync_3.1.3-8ubuntu0.1_amd64.deb ...
+Unpacking rsync (3.1.3-8ubuntu0.1) over (3.1.3-8) ...
+Preparing to unpack .../03-python-apt-common_2.0.0ubuntu0.20.04.6_all.deb ...
+Unpacking python-apt-common (2.0.0ubuntu0.20.04.6) over (2.0.0ubuntu0.20.04.5) ...
+Preparing to unpack .../04-python3-apt_2.0.0ubuntu0.20.04.6_amd64.deb ...
+Unpacking python3-apt (2.0.0ubuntu0.20.04.6) over (2.0.0ubuntu0.20.04.5) ...
+Preparing to unpack .../05-update-manager-core_1%3a20.04.10.9_all.deb ...
+Unpacking update-manager-core (1:20.04.10.9) over (1:20.04.10.7) ...
+Preparing to unpack .../06-python3-update-manager_1%3a20.04.10.9_all.deb ...
+Unpacking python3-update-manager (1:20.04.10.9) over (1:20.04.10.7) ...
+Preparing to unpack .../07-distro-info-data_0.43ubuntu1.9_all.deb ...
+Unpacking distro-info-data (0.43ubuntu1.9) over (0.43ubuntu1.6) ...
+Preparing to unpack .../08-ubuntu-advantage-tools_27.4.2~20.04.1_amd64.deb ...
+Unpacking ubuntu-advantage-tools (27.4.2~20.04.1) over (27.2.2~20.04.1) ...
+Preparing to unpack .../09-update-notifier-common_3.192.30.10_all.deb ...
+Unpacking update-notifier-common (3.192.30.10) over (3.192.30.9) ...
+Preparing to unpack .../10-libprocps8_2%3a3.3.16-1ubuntu2.3_amd64.deb ...
+Unpacking libprocps8:amd64 (2:3.3.16-1ubuntu2.3) over (2:3.3.16-1ubuntu2.2) ...
+Preparing to unpack .../11-procps_2%3a3.3.16-1ubuntu2.3_amd64.deb ...
+Unpacking procps (2:3.3.16-1ubuntu2.3) over (2:3.3.16-1ubuntu2.2) ...
+Preparing to unpack .../12-libdrm-common_2.4.105-3~20.04.2_all.deb ...
+Unpacking libdrm-common (2.4.105-3~20.04.2) over (2.4.105-3~20.04.1) ...
+Preparing to unpack .../13-libdrm2_2.4.105-3~20.04.2_amd64.deb ...
+Unpacking libdrm2:amd64 (2.4.105-3~20.04.2) over (2.4.105-3~20.04.1) ...
+Preparing to unpack .../14-open-vm-tools_2%3a11.3.0-2ubuntu0~ubuntu20.04.2_amd64.deb ...
+Unpacking open-vm-tools (2:11.3.0-2ubuntu0~ubuntu20.04.2) over (2:11.0.5-4) ...
+Preparing to unpack .../15-openssl_1.1.1f-1ubuntu2.10_amd64.deb ...
+Unpacking openssl (1.1.1f-1ubuntu2.10) over (1.1.1f-1ubuntu2.5) ...
+Preparing to unpack .../16-ca-certificates_20210119~20.04.2_all.deb ...
+Unpacking ca-certificates (20210119~20.04.2) over (20210119~20.04.1) ...
+Preparing to unpack .../17-tzdata_2021e-0ubuntu0.20.04_all.deb ...
+Unpacking tzdata (2021e-0ubuntu0.20.04) over (2021a-0ubuntu0.20.04) ...
+Preparing to unpack .../18-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Unpacking libicu66:amd64 (66.1-2ubuntu2.1) over (66.1-2ubuntu2) ...
+Preparing to unpack .../19-libnetplan0_0.103-0ubuntu5~20.04.5_amd64.deb ...
+Unpacking libnetplan0:amd64 (0.103-0ubuntu5~20.04.5) over (0.102-0ubuntu1~20.04.2) ...
+Preparing to unpack .../20-netplan.io_0.103-0ubuntu5~20.04.5_amd64.deb ...
+Unpacking netplan.io (0.103-0ubuntu5~20.04.5) over (0.102-0ubuntu1~20.04.2) ...
+Preparing to unpack .../21-xxd_2%3a8.1.2269-1ubuntu5.4_amd64.deb ...
+Unpacking xxd (2:8.1.2269-1ubuntu5.4) over (2:8.1.2269-1ubuntu5) ...
+Preparing to unpack .../22-vim_2%3a8.1.2269-1ubuntu5.4_amd64.deb ...
+Unpacking vim (2:8.1.2269-1ubuntu5.4) over (2:8.1.2269-1ubuntu5) ...
+Preparing to unpack .../23-vim-tiny_2%3a8.1.2269-1ubuntu5.4_amd64.deb ...
+Unpacking vim-tiny (2:8.1.2269-1ubuntu5.4) over (2:8.1.2269-1ubuntu5) ...
+Preparing to unpack .../24-vim-runtime_2%3a8.1.2269-1ubuntu5.4_all.deb ...
+Unpacking vim-runtime (2:8.1.2269-1ubuntu5.4) over (2:8.1.2269-1ubuntu5) ...
+Preparing to unpack .../25-vim-common_2%3a8.1.2269-1ubuntu5.4_all.deb ...
+Unpacking vim-common (2:8.1.2269-1ubuntu5.4) over (2:8.1.2269-1ubuntu5) ...
+Preparing to unpack .../26-accountsservice_0.6.55-0ubuntu12~20.04.5_amd64.deb ...
+Unpacking accountsservice (0.6.55-0ubuntu12~20.04.5) over (0.6.55-0ubuntu12~20.04.4) ...
+Preparing to unpack .../27-libaccountsservice0_0.6.55-0ubuntu12~20.04.5_amd64.deb ...
+Unpacking libaccountsservice0:amd64 (0.6.55-0ubuntu12~20.04.5) over (0.6.55-0ubuntu12~20.04.4) ...
+Preparing to unpack .../28-bind9-dnsutils_1%3a9.16.1-0ubuntu2.9_amd64.deb ...
+Unpacking bind9-dnsutils (1:9.16.1-0ubuntu2.9) over (1:9.16.1-0ubuntu2.8) ...
+Preparing to unpack .../29-bind9-libs_1%3a9.16.1-0ubuntu2.9_amd64.deb ...
+Unpacking bind9-libs:amd64 (1:9.16.1-0ubuntu2.9) over (1:9.16.1-0ubuntu2.8) ...
+Preparing to unpack .../30-bind9-host_1%3a9.16.1-0ubuntu2.9_amd64.deb ...
+Unpacking bind9-host (1:9.16.1-0ubuntu2.9) over (1:9.16.1-0ubuntu2.8) ...
+Preparing to unpack .../31-busybox-static_1%3a1.30.1-4ubuntu6.4_amd64.deb ...
+Unpacking busybox-static (1:1.30.1-4ubuntu6.4) over (1:1.30.1-4ubuntu6.3) ...
+Preparing to unpack .../32-command-not-found_20.04.5_all.deb ...
+Unpacking command-not-found (20.04.5) over (20.04.4) ...
+Preparing to unpack .../33-python3-commandnotfound_20.04.5_all.deb ...
+Unpacking python3-commandnotfound (20.04.5) over (20.04.4) ...
+Preparing to unpack .../34-cpio_2.13+dfsg-2ubuntu0.3_amd64.deb ...
+Unpacking cpio (2.13+dfsg-2ubuntu0.3) over (2.13+dfsg-2) ...
+Preparing to unpack .../35-openssh-sftp-server_1%3a8.2p1-4ubuntu0.4_amd64.deb ...
+Unpacking openssh-sftp-server (1:8.2p1-4ubuntu0.4) over (1:8.2p1-4ubuntu0.3) ...
+Preparing to unpack .../36-openssh-server_1%3a8.2p1-4ubuntu0.4_amd64.deb ...
+Unpacking openssh-server (1:8.2p1-4ubuntu0.4) over (1:8.2p1-4ubuntu0.3) ...
+Preparing to unpack .../37-git-man_1%3a2.25.1-1ubuntu3.2_all.deb ...
+Unpacking git-man (1:2.25.1-1ubuntu3.2) over (1:2.25.1-1ubuntu3.1) ...
+Preparing to unpack .../38-libssh-4_0.9.3-2ubuntu2.2_amd64.deb ...
+Unpacking libssh-4:amd64 (0.9.3-2ubuntu2.2) over (0.9.3-2ubuntu2.1) ...
+Preparing to unpack .../39-libcurl3-gnutls_7.68.0-1ubuntu2.7_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.68.0-1ubuntu2.7) over (7.68.0-1ubuntu2.6) ...
+Preparing to unpack .../40-git_1%3a2.25.1-1ubuntu3.2_amd64.deb ...
+Unpacking git (1:2.25.1-1ubuntu3.2) over (1:2.25.1-1ubuntu3.1) ...
+Preparing to unpack .../41-openssh-client_1%3a8.2p1-4ubuntu0.4_amd64.deb ...
+Unpacking openssh-client (1:8.2p1-4ubuntu0.4) over (1:8.2p1-4ubuntu0.3) ...
+Preparing to unpack .../42-ufw_0.36-6ubuntu1_all.deb ...
+Unpacking ufw (0.36-6ubuntu1) over (0.36-6) ...
+Preparing to unpack .../43-wget_1.20.3-1ubuntu2_amd64.deb ...
+Unpacking wget (1.20.3-1ubuntu2) over (1.20.3-1ubuntu1) ...
+Preparing to unpack .../44-libasound2_1.2.2-2.1ubuntu2.5_amd64.deb ...
+Unpacking libasound2:amd64 (1.2.2-2.1ubuntu2.5) over (1.2.2-2.1ubuntu2.4) ...
+Preparing to unpack .../45-libasound2-data_1.2.2-2.1ubuntu2.5_all.deb ...
+Unpacking libasound2-data (1.2.2-2.1ubuntu2.5) over (1.2.2-2.1ubuntu2.4) ...
+Preparing to unpack .../46-alsa-ucm-conf_1.2.2-1ubuntu0.11_all.deb ...
+Unpacking alsa-ucm-conf (1.2.2-1ubuntu0.11) over (1.2.2-1ubuntu0.9) ...
+Preparing to unpack .../47-ansible-core_2.12.1-1ppa~focal_all.deb ...
+Unpacking ansible-core (2.12.1-1ppa~focal) over (2.11.7-1ppa~focal) ...
+Preparing to unpack .../48-ansible_5.1.0-1ppa~focal_all.deb ...
+Unpacking ansible (5.1.0-1ppa~focal) over (4.9.0-1ppa~focal) ...
+Preparing to unpack .../49-python3-problem-report_2.20.11-0ubuntu27.21_all.deb ...
+Unpacking python3-problem-report (2.20.11-0ubuntu27.21) over (2.20.11-0ubuntu27.18) ...
+Preparing to unpack .../50-python3-apport_2.20.11-0ubuntu27.21_all.deb ...
+Unpacking python3-apport (2.20.11-0ubuntu27.21) over (2.20.11-0ubuntu27.18) ...
+Preparing to unpack .../51-apport_2.20.11-0ubuntu27.21_all.deb ...
+invoke-rc.d: could not determine current runlevel
+ * Stopping automatic crash report generation: apport                                                                                                                                                       [ OK ]
+Unpacking apport (2.20.11-0ubuntu27.21) over (2.20.11-0ubuntu27.18) ...
+Preparing to unpack .../52-busybox-initramfs_1%3a1.30.1-4ubuntu6.4_amd64.deb ...
+Unpacking busybox-initramfs (1:1.30.1-4ubuntu6.4) over (1:1.30.1-4ubuntu6.3) ...
+Preparing to unpack .../53-curl_7.68.0-1ubuntu2.7_amd64.deb ...
+Unpacking curl (7.68.0-1ubuntu2.7) over (7.68.0-1ubuntu2.6) ...
+Preparing to unpack .../54-libcurl4_7.68.0-1ubuntu2.7_amd64.deb ...
+Unpacking libcurl4:amd64 (7.68.0-1ubuntu2.7) over (7.68.0-1ubuntu2.6) ...
+Preparing to unpack .../55-libdrm-amdgpu1_2.4.105-3~20.04.2_amd64.deb ...
+Unpacking libdrm-amdgpu1:amd64 (2.4.105-3~20.04.2) over (2.4.105-3~20.04.1) ...
+Preparing to unpack .../56-libdrm-intel1_2.4.105-3~20.04.2_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.105-3~20.04.2) over (2.4.105-3~20.04.1) ...
+Preparing to unpack .../57-libdrm-nouveau2_2.4.105-3~20.04.2_amd64.deb ...
+Unpacking libdrm-nouveau2:amd64 (2.4.105-3~20.04.2) over (2.4.105-3~20.04.1) ...
+Preparing to unpack .../58-libdrm-radeon1_2.4.105-3~20.04.2_amd64.deb ...
+Unpacking libdrm-radeon1:amd64 (2.4.105-3~20.04.2) over (2.4.105-3~20.04.1) ...
+Preparing to unpack .../59-libglx-mesa0_21.0.3-0ubuntu0.3~20.04.5_amd64.deb ...
+Unpacking libglx-mesa0:amd64 (21.0.3-0ubuntu0.3~20.04.5) over (21.0.3-0ubuntu0.3~20.04.1) ...
+Preparing to unpack .../60-libgl1-mesa-dri_21.0.3-0ubuntu0.3~20.04.5_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (21.0.3-0ubuntu0.3~20.04.5) over (21.0.3-0ubuntu0.3~20.04.1) ...
+Preparing to unpack .../61-libglapi-mesa_21.0.3-0ubuntu0.3~20.04.5_amd64.deb ...
+Unpacking libglapi-mesa:amd64 (21.0.3-0ubuntu0.3~20.04.5) over (21.0.3-0ubuntu0.3~20.04.1) ...
+Preparing to unpack .../62-libllvm12_1%3a12.0.0-3ubuntu1~20.04.4_amd64.deb ...
+Unpacking libllvm12:amd64 (1:12.0.0-3ubuntu1~20.04.4) over (1:12.0.0-3ubuntu1~20.04.3) ...
+Preparing to unpack .../63-libnss3_2%3a3.49.1-1ubuntu1.6_amd64.deb ...
+Unpacking libnss3:amd64 (2:3.49.1-1ubuntu1.6) over (2:3.49.1-1ubuntu1.5) ...
+Preparing to unpack .../64-libpulsedsp_1%3a13.99.1-1ubuntu3.13_amd64.deb ...
+Unpacking libpulsedsp:amd64 (1:13.99.1-1ubuntu3.13) over (1:13.99.1-1ubuntu3.11) ...
+Preparing to unpack .../65-pulseaudio-utils_1%3a13.99.1-1ubuntu3.13_amd64.deb ...
+Unpacking pulseaudio-utils (1:13.99.1-1ubuntu3.13) over (1:13.99.1-1ubuntu3.11) ...
+Preparing to unpack .../66-libpulse0_1%3a13.99.1-1ubuntu3.13_amd64.deb ...
+Unpacking libpulse0:amd64 (1:13.99.1-1ubuntu3.13) over (1:13.99.1-1ubuntu3.11) ...
+Preparing to unpack .../67-libtdb1_1.4.3-0ubuntu0.20.04.1_amd64.deb ...
+Unpacking libtdb1:amd64 (1.4.3-0ubuntu0.20.04.1) over (1.4.2-3build1) ...
+Preparing to unpack .../68-libudisks2-0_2.8.4-1ubuntu2_amd64.deb ...
+Unpacking libudisks2-0:amd64 (2.8.4-1ubuntu2) over (2.8.4-1ubuntu1) ...
+Preparing to unpack .../69-linux-base_4.5ubuntu3.7_all.deb ...
+Unpacking linux-base (4.5ubuntu3.7) over (4.5ubuntu3.6) ...
+Preparing to unpack .../70-mesa-vulkan-drivers_21.0.3-0ubuntu0.3~20.04.5_amd64.deb ...
+Unpacking mesa-vulkan-drivers:amd64 (21.0.3-0ubuntu0.3~20.04.5) over (21.0.3-0ubuntu0.3~20.04.1) ...
+Selecting previously unselected package python3-jmespath.
+Preparing to unpack .../71-python3-jmespath_0.9.4-2ubuntu1_all.deb ...
+Unpacking python3-jmespath (0.9.4-2ubuntu1) ...
+Selecting previously unselected package python3-kerberos.
+Preparing to unpack .../72-python3-kerberos_1.1.14-3.1build1_amd64.deb ...
+Unpacking python3-kerberos (1.1.14-3.1build1) ...
+Selecting previously unselected package python3-ntlm-auth.
+Preparing to unpack .../73-python3-ntlm-auth_1.1.0-1_all.deb ...
+Unpacking python3-ntlm-auth (1.1.0-1) ...
+Selecting previously unselected package python3-requests-kerberos.
+Preparing to unpack .../74-python3-requests-kerberos_0.12.0-2_all.deb ...
+Unpacking python3-requests-kerberos (0.12.0-2) ...
+Selecting previously unselected package python3-requests-ntlm.
+Preparing to unpack .../75-python3-requests-ntlm_1.1.0-1_all.deb ...
+Unpacking python3-requests-ntlm (1.1.0-1) ...
+Selecting previously unselected package python3-xmltodict.
+Preparing to unpack .../76-python3-xmltodict_0.12.0-1_all.deb ...
+Unpacking python3-xmltodict (0.12.0-1) ...
+Selecting previously unselected package python3-winrm.
+Preparing to unpack .../77-python3-winrm_0.3.0-2_all.deb ...
+Unpacking python3-winrm (0.3.0-2) ...
+Preparing to unpack .../78-squashfs-tools_1%3a4.4-1ubuntu0.3_amd64.deb ...
+Unpacking squashfs-tools (1:4.4-1ubuntu0.3) over (1:4.4-1) ...
+Preparing to unpack .../79-snapd_2.51.1+20.04ubuntu2_amd64.deb ...
+Unpacking snapd (2.51.1+20.04ubuntu2) over (2.49.2+20.04) ...
+Preparing to unpack .../80-udisks2_2.8.4-1ubuntu2_amd64.deb ...
+Unpacking udisks2 (2.8.4-1ubuntu2) over (2.8.4-1ubuntu1) ...
+Preparing to unpack .../81-cloud-init_21.4-0ubuntu1~20.04.1_all.deb ...
+Unpacking cloud-init (21.4-0ubuntu1~20.04.1) over (21.2-3-g899bfaa9-0ubuntu2~20.04.1) ...
+Preparing to unpack .../82-cloud-initramfs-copymods_0.45ubuntu2_all.deb ...
+Unpacking cloud-initramfs-copymods (0.45ubuntu2) over (0.45ubuntu1) ...
+Preparing to unpack .../83-cloud-initramfs-dyn-netconf_0.45ubuntu2_all.deb ...
+Unpacking cloud-initramfs-dyn-netconf (0.45ubuntu2) over (0.45ubuntu1) ...
+Preparing to unpack .../84-overlayroot_0.45ubuntu2_all.deb ...
+Unpacking overlayroot (0.45ubuntu2) over (0.45ubuntu1) ...
+Setting up cpio (2.13+dfsg-2ubuntu0.3) ...
+Setting up linux-base (4.5ubuntu3.7) ...
+Setting up squashfs-tools (1:4.4-1ubuntu0.3) ...
+Setting up alsa-ucm-conf (1.2.2-1ubuntu0.11) ...
+Setting up libpulse0:amd64 (1:13.99.1-1ubuntu3.13) ...
+Setting up python3-problem-report (2.20.11-0ubuntu27.21) ...
+Setting up distro-info-data (0.43ubuntu1.9) ...
+Setting up python3-ntlm-auth (1.1.0-1) ...
+Setting up libtdb1:amd64 (1.4.3-0ubuntu0.20.04.1) ...
+Setting up libssl1.1:amd64 (1.1.1f-1ubuntu2.10) ...
+Setting up python3-kerberos (1.1.14-3.1build1) ...
+Setting up libnetplan0:amd64 (0.103-0ubuntu5~20.04.5) ...
+Setting up libpulsedsp:amd64 (1:13.99.1-1ubuntu3.13) ...
+Setting up ansible-core (2.12.1-1ppa~focal) ...
+Installing new version of config file /etc/ansible/ansible.cfg ...
+Setting up libntfs-3g883 (1:2017.3.23AR.3-3ubuntu1.1) ...
+Setting up ufw (0.36-6ubuntu1) ...
+Setting up libnss3:amd64 (2:3.49.1-1ubuntu1.6) ...
+Setting up xxd (2:8.1.2269-1ubuntu5.4) ...
+Setting up ntfs-3g (1:2017.3.23AR.3-3ubuntu1.1) ...
+Setting up tzdata (2021e-0ubuntu0.20.04) ...
+
+Current default time zone: 'Asia/Kolkata'
+Local time is now:      Sat Jan  8 07:54:28 IST 2022.
+Universal Time is now:  Sat Jan  8 02:24:28 UTC 2022.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up libasound2-data (1.2.2-2.1ubuntu2.5) ...
+Setting up python3-xmltodict (0.12.0-1) ...
+Setting up vim-common (2:8.1.2269-1ubuntu5.4) ...
+Setting up busybox-static (1:1.30.1-4ubuntu6.4) ...
+Setting up python3-jmespath (0.9.4-2ubuntu1) ...
+Setting up libllvm12:amd64 (1:12.0.0-3ubuntu1~20.04.4) ...
+Setting up pulseaudio-utils (1:13.99.1-1ubuntu3.13) ...
+Setting up cloud-initramfs-copymods (0.45ubuntu2) ...
+Setting up udev (245.4-4ubuntu3.14) ...
+invoke-rc.d: could not determine current runlevel
+update-initramfs: deferring update (trigger activated)
+Setting up busybox-initramfs (1:1.30.1-4ubuntu6.4) ...
+Setting up libglapi-mesa:amd64 (21.0.3-0ubuntu0.3~20.04.5) ...
+Setting up libssh-4:amd64 (0.9.3-2ubuntu2.2) ...
+Setting up python3-requests-kerberos (0.12.0-2) ...
+Setting up python-apt-common (2.0.0ubuntu0.20.04.6) ...
+Setting up libasound2:amd64 (1.2.2-2.1ubuntu2.5) ...
+Setting up cloud-initramfs-dyn-netconf (0.45ubuntu2) ...
+Setting up libcurl4:amd64 (7.68.0-1ubuntu2.7) ...
+Setting up git-man (1:2.25.1-1ubuntu3.2) ...
+Setting up curl (7.68.0-1ubuntu2.7) ...
+Setting up ansible (5.1.0-1ppa~focal) ...
+Setting up libaccountsservice0:amd64 (0.6.55-0ubuntu12~20.04.5) ...
+Setting up vim-runtime (2:8.1.2269-1ubuntu5.4) ...
+Setting up openssl (1.1.1f-1ubuntu2.10) ...
+Setting up libdrm-common (2.4.105-3~20.04.2) ...
+Setting up overlayroot (0.45ubuntu2) ...
+Setting up accountsservice (0.6.55-0ubuntu12~20.04.5) ...
+Setting up libprocps8:amd64 (2:3.3.16-1ubuntu2.3) ...
+Setting up rsync (3.1.3-8ubuntu0.1) ...
+invoke-rc.d: could not determine current runlevel
+Setting up libudisks2-0:amd64 (2.8.4-1ubuntu2) ...
+Setting up python3-requests-ntlm (1.1.0-1) ...
+Setting up libpython3.8-minimal:amd64 (3.8.10-0ubuntu1~20.04.2) ...
+Setting up wget (1.20.3-1ubuntu2) ...
+Setting up bind9-libs:amd64 (1:9.16.1-0ubuntu2.9) ...
+Setting up python3-apt (2.0.0ubuntu0.20.04.6) ...
+Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Setting up openssh-client (1:8.2p1-4ubuntu0.4) ...
+Setting up libcurl3-gnutls:amd64 (7.68.0-1ubuntu2.7) ...
+Setting up vim-tiny (2:8.1.2269-1ubuntu5.4) ...
+Setting up python3-apport (2.20.11-0ubuntu27.21) ...
+Setting up ca-certificates (20210119~20.04.2) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 1 removed; done.
+Setting up python3-commandnotfound (20.04.5) ...
+Setting up git (1:2.25.1-1ubuntu3.2) ...
+Setting up libdrm2:amd64 (2.4.105-3~20.04.2) ...
+Setting up python3.8-minimal (3.8.10-0ubuntu1~20.04.2) ...
+Setting up open-vm-tools (2:11.3.0-2ubuntu0~ubuntu20.04.2) ...
+Installing new version of config file /etc/vmware-tools/tools.conf.example ...
+Installing new version of config file /etc/vmware-tools/vgauth.conf ...
+Removing obsolete conffile /etc/vmware-tools/vm-support ...
+invoke-rc.d: could not determine current runlevel
+Setting up python3-update-manager (1:20.04.10.9) ...
+Setting up procps (2:3.3.16-1ubuntu2.3) ...
+Setting up python3-winrm (0.3.0-2) ...
+Setting up ubuntu-advantage-tools (27.4.2~20.04.1) ...
+Installing new version of config file /etc/logrotate.d/ubuntu-advantage-tools ...
+Installing new version of config file /etc/ubuntu-advantage/help_data.yaml ...
+Installing new version of config file /etc/ubuntu-advantage/uaclient.conf ...
+Created symlink /etc/systemd/system/timers.target.wants/ua-timer.timer → /lib/systemd/system/ua-timer.timer.
+Created symlink /etc/systemd/system/multi-user.target.wants/ua-license-check.path → /lib/systemd/system/ua-license-check.path.
+Setting up libpython3.8-stdlib:amd64 (3.8.10-0ubuntu1~20.04.2) ...
+Setting up python3.8 (3.8.10-0ubuntu1~20.04.2) ...
+Setting up bind9-host (1:9.16.1-0ubuntu2.9) ...
+Setting up libdrm-amdgpu1:amd64 (2.4.105-3~20.04.2) ...
+Setting up mesa-vulkan-drivers:amd64 (21.0.3-0ubuntu0.3~20.04.5) ...
+Setting up openssh-sftp-server (1:8.2p1-4ubuntu0.4) ...
+Setting up libdrm-nouveau2:amd64 (2.4.105-3~20.04.2) ...
+Setting up openssh-server (1:8.2p1-4ubuntu0.4) ...
+Creating SSH2 RSA key; this may take some time ...
+3072 SHA256:hce8mxldKF9MclZx8lI6gjLk6roF9XiLwaGWQMNrv38 root@LAPTOP-18KCPA72 (RSA)
+Creating SSH2 ECDSA key; this may take some time ...
+256 SHA256:P6vivPVhww9YsPkUOU9jU6hSy6VfZGx80SunFHafGdI root@LAPTOP-18KCPA72 (ECDSA)
+Creating SSH2 ED25519 key; this may take some time ...
+256 SHA256:nM6D6iudDkqePuUmRU/KyCFvwWbEVWOUpZ1NHQ+NqUc root@LAPTOP-18KCPA72 (ED25519)
+invoke-rc.d: could not determine current runlevel
+Setting up libdrm-radeon1:amd64 (2.4.105-3~20.04.2) ...
+Setting up libdrm-intel1:amd64 (2.4.105-3~20.04.2) ...
+Setting up libgl1-mesa-dri:amd64 (21.0.3-0ubuntu0.3~20.04.5) ...
+Setting up apport (2.20.11-0ubuntu27.21) ...
+invoke-rc.d: could not determine current runlevel
+Setting up command-not-found (20.04.5) ...
+Setting up libpython3.8:amd64 (3.8.10-0ubuntu1~20.04.2) ...
+Setting up update-manager-core (1:20.04.10.9) ...
+Setting up bind9-dnsutils (1:9.16.1-0ubuntu2.9) ...
+Setting up libglx-mesa0:amd64 (21.0.3-0ubuntu0.3~20.04.5) ...
+Setting up vim (2:8.1.2269-1ubuntu5.4) ...
+Setting up update-notifier-common (3.192.30.10) ...
+Setting up systemd-timesyncd (245.4-4ubuntu3.14) ...
+Setting up systemd (245.4-4ubuntu3.14) ...
+Installing new version of config file /etc/dhcp/dhclient-enter-hooks.d/resolved ...
+Initializing machine ID from random generator.
+Setting up netplan.io (0.103-0ubuntu5~20.04.5) ...
+Setting up snapd (2.51.1+20.04ubuntu2) ...
+Installing new version of config file /etc/profile.d/apps-bin-path.sh ...
+Setting up systemd-sysv (245.4-4ubuntu3.14) ...
+Setting up cloud-init (21.4-0ubuntu1~20.04.1) ...
+Installing new version of config file /etc/cloud/cloud.cfg ...
+Installing new version of config file /etc/cloud/templates/hosts.alpine.tmpl ...
+Installing new version of config file /etc/cloud/templates/hosts.debian.tmpl ...
+Installing new version of config file /etc/cloud/templates/resolv.conf.tmpl ...
+Installing new version of config file /etc/cloud/templates/sources.list.debian.tmpl ...
+Created symlink /etc/systemd/system/cloud-init.target.wants/cloud-init-hotplugd.socket → /lib/systemd/system/cloud-init-hotplugd.socket.
+Setting up libnss-systemd:amd64 (245.4-4ubuntu3.14) ...
+Setting up libpam-systemd:amd64 (245.4-4ubuntu3.14) ...
+Setting up udisks2 (2.8.4-1ubuntu2) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for initramfs-tools (0.136ubuntu6.6) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for rsyslog (8.2001.0-1ubuntu1.1) ...
+invoke-rc.d: could not determine current runlevel
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for dbus (1.12.16-2ubuntu2.1) ...
+Processing triggers for install-info (6.7.0.dfsg.2-5) ...
+Processing triggers for ca-certificates (20210119~20.04.2) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+devi77@LAPTOP-18KCPA72:~$ python3
+Python 3.8.10 (default, Nov 26 2021, 20:14:08)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> "hello"
+'hello'
+>>> 12+45
+57
+>>> 50+10
+60
+>>> 50-10
+40
+>>> 50*10
+500
+>>> 50/10
+5.0
+>>> name="Devi"
+>>> no=206297
+>>> location="Nandigama"
+>>> print("name is " + name + " city is " + city + "and no is " +str(no))
+name is Devi city is Nandigamaand no is 206297
+>>> def mul(num):
+...    for i in range(1,11):
+...       print(num, '*' ,i, '=' ,num*i)
+...
+>>> mul(6)
+6 * 1 = 6
+6 * 2 = 12
+6 * 3 = 18
+6 * 4 = 24
+6 * 5 = 30
+6 * 6 = 36
+6 * 7 = 42
+6 * 8 = 48
+6 * 9 = 54
+6 * 10 = 60
+>>> class sample:
+...   def something(self,no,name):
+...    self.name=name
+...    self.no=no
+...    print(self.name," ",self.no)
+...
+>>> smp=sample()
+>>> smp.something("DEVI",206297)
+206297   DEVI
+devi77@LAPTOP-18KCPA72:~$ service --status-all
+ [ - ]  apparmor
+ [ ? ]  apport
+ [ - ]  atd
+ [ - ]  console-setup.sh
+ [ - ]  cron
+ [ ? ]  cryptdisks
+ [ ? ]  cryptdisks-early
+ [ - ]  dbus
+ [ ? ]  hwclock.sh
+ [ + ]  irqbalance
+ [ - ]  iscsid
+ [ - ]  keyboard-setup.sh
+ [ ? ]  kmod
+ [ - ]  lvm2
+ [ - ]  lvm2-lvmpolld
+ [ - ]  multipath-tools
+ [ + ]  open-iscsi
+ [ - ]  open-vm-tools
+ [ ? ]  plymouth
+ [ ? ]  plymouth-log
+ [ - ]  procps
+ [ - ]  rsync
+ [ - ]  rsyslog
+ [ - ]  screen-cleanup
+ [ - ]  ssh
+ [ + ]  udev
+ [ - ]  ufw
+ [ - ]  unattended-upgrades
+ [ - ]  uuidd
+ [ - ]  x11-common
+devi77@LAPTOP-18KCPA72:~$ ansible --version
+ansible [core 2.12.1] program's version number, config file location, configured module search path, module location,
+  config file = /etc/ansible/ansible.cfg exit
+  configured module search path = ['/home/devi77/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansibledebugging)
+  ansible collection location = /home/devi77/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansibleml
+  python version = 3.8.10 (default, Nov 26 2021, 20:14:08) [GCC 9.3.0]
+  jinja version = 2.10.1
+  libyaml = True teja sai nandhan
+devi77@LAPTOP-18KCPA72:~$ ansible apt update
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER]
+               [-K | --become-password-file BECOME_PASSWORD_FILE] [-i INVENTORY] [--list-hosts] [-l SUBSET]
+               [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER]
+               [-c CONNECTION] [-T TIMEOUT] [--ssh-common-args SSH_COMMON_ARGS] [--sftp-extra-args SFTP_EXTRA_ARGS]
+               [--scp-extra-args SCP_EXTRA_ARGS] [--ssh-extra-args SSH_EXTRA_ARGS]
+               [-k | --connection-password-file CONNECTION_PASSWORD_FILE] [-C] [--syntax-check] [-D] [-e EXTRA_VARS]
+               [--vault-id VAULT_IDS] [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES] [-f FORKS]
+               [-M MODULE_PATH] [--playbook-dir BASEDIR] [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS] [-m MODULE_NAME]
+               pattern
+ansible: error: unrecognized arguments: update
+
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER]
+               [-K | --become-password-file BECOME_PASSWORD_FILE] [-i INVENTORY] [--list-hosts] [-l SUBSET]
+               [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER]
+               [-c CONNECTION] [-T TIMEOUT] [--ssh-common-args SSH_COMMON_ARGS] [--sftp-extra-args SFTP_EXTRA_ARGS]
+               [--scp-extra-args SCP_EXTRA_ARGS] [--ssh-extra-args SSH_EXTRA_ARGS]
+               [-k | --connection-password-file CONNECTION_PASSWORD_FILE] [-C] [--syntax-check] [-D] [-e EXTRA_VARS]
+               [--vault-id VAULT_IDS] [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES] [-f FORKS]
+               [-M MODULE_PATH] [--playbook-dir BASEDIR] [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS] [-m MODULE_NAME]
+               pattern
+
+Define and run a single task 'playbook' against a set of hosts
+
+positional arguments:
+  pattern               host pattern
+
+optional arguments:
+  --ask-vault-password, --ask-vault-pass
+                        ask for vault password
+  --become-password-file BECOME_PASSWORD_FILE, --become-pass-file BECOME_PASSWORD_FILE
+                        Become password file
+  --connection-password-file CONNECTION_PASSWORD_FILE, --conn-pass-file CONNECTION_PASSWORD_FILE
+                        Connection password file
+  --list-hosts          outputs a list of matching hosts; does not execute anything else
+  --playbook-dir BASEDIR
+                        Since this tool does not use playbooks, use this as a substitute playbook directory.This sets
+                        the relative path for many features including roles/ group_vars/ etc.
+  --syntax-check        perform a syntax check on the playbook, but do not execute it
+  --task-timeout TASK_TIMEOUT
+                        set task timeout limit in seconds, must be positive integer.
+  --vault-id VAULT_IDS  the vault identity to use
+  --vault-password-file VAULT_PASSWORD_FILES, --vault-pass-file VAULT_PASSWORD_FILES
+                        vault password file
+  --version             show program's version number, config file location, configured module search path, module
+                        location, executable location and exit
+  -B SECONDS, --background SECONDS
+                        run asynchronously, failing after X seconds (default=N/A)
+  -C, --check           don't make any changes; instead, try to predict some of the changes that may occur
+  -D, --diff            when changing (small) files and templates, show the differences in those files; works great with
+                        --check
+  -K, --ask-become-pass
+                        ask for privilege escalation password
+  -M MODULE_PATH, --module-path MODULE_PATH
+                        prepend colon-separated path(s) to module library
+                        (default=~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules)
+  -P POLL_INTERVAL, --poll POLL_INTERVAL
+                        set the poll interval if using -B (default=15)
+  -a MODULE_ARGS, --args MODULE_ARGS
+                        The action's options in space separated k=v format: -a 'opt1=val1 opt2=val2'
+  -e EXTRA_VARS, --extra-vars EXTRA_VARS
+                        set additional variables as key=value or YAML/JSON, if filename prepend with @
+  -f FORKS, --forks FORKS
+                        specify number of parallel processes to use (default=5)
+  -h, --help            show this help message and exit
+  -i INVENTORY, --inventory INVENTORY, --inventory-file INVENTORY
+                        specify inventory host path or comma separated host list. --inventory-file is deprecated
+  -k, --ask-pass        ask for connection password
+  -l SUBSET, --limit SUBSET
+                        further limit selected hosts to an additional pattern
+  -m MODULE_NAME, --module-name MODULE_NAME
+                        Name of the action to execute (default=command)
+  -o, --one-line        condense output
+  -t TREE, --tree TREE  log output to this directory
+  -v, --verbose         verbose mode (-vvv for more, -vvvv to enable connection debugging)
+
+Privilege Escalation Options:
+  control how and which user you become as on target hosts
+
+  --become-method BECOME_METHOD
+                        privilege escalation method to use (default=sudo), use `ansible-doc -t become -l` to list valid
+                        choices.
+  --become-user BECOME_USER
+                        run operations as this user (default=root)
+  -b, --become          run operations with become (does not imply password prompting)
+
+Connection Options:
+  control as whom and how to connect to hosts
+
+  --private-key PRIVATE_KEY_FILE, --key-file PRIVATE_KEY_FILE
+                        use this file to authenticate the connection
+  --scp-extra-args SCP_EXTRA_ARGS
+                        specify extra arguments to pass to scp only (e.g. -l)
+  --sftp-extra-args SFTP_EXTRA_ARGS
+                        specify extra arguments to pass to sftp only (e.g. -f, -l)
+  --ssh-common-args SSH_COMMON_ARGS
+                        specify common arguments to pass to sftp/scp/ssh (e.g. ProxyCommand)
+  --ssh-extra-args SSH_EXTRA_ARGS
+                        specify extra arguments to pass to ssh only (e.g. -R)
+  -T TIMEOUT, --timeout TIMEOUT
+                        override the connection timeout in seconds (default=10)
+  -c CONNECTION, --connection CONNECTION
+                        connection type to use (default=smart)
+  -u REMOTE_USER, --user REMOTE_USER
+                        connect as this user (default=None)
+
+Some actions do not make sense in Ad-Hoc (include, meta, etc)
+devi77@LAPTOP-18KCPA72:~$ sudo apt install software-properties-common
+[sudo] password for devi77:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+software-properties-common is already the newest version (0.99.9.8).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+devi77@LAPTOP-18KCPA72:~$ sudo add-apt-repository --yes --update ppa:ansible/ansible
+Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Fetched 336 kB in 9s (37.5 kB/s)
+Reading package lists... Done
+devi77@LAPTOP-18KCPA72:~$ sudo apt install ansible
+[sudo] password for devi77:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+ansible is already the newest version (5.1.0-1ppa~focal).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+devi77@LAPTOP-18KCPA72:~$ ansible all -m ping --ask -pass
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER]
+               [-K | --become-password-file BECOME_PASSWORD_FILE] [-i INVENTORY] [--list-hosts] [-l SUBSET]
+               [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER]
+               [-c CONNECTION] [-T TIMEOUT] [--ssh-common-args SSH_COMMON_ARGS] [--sftp-extra-args SFTP_EXTRA_ARGS]
+               [--scp-extra-args SCP_EXTRA_ARGS] [--ssh-extra-args SSH_EXTRA_ARGS]
+               [-k | --connection-password-file CONNECTION_PASSWORD_FILE] [-C] [--syntax-check] [-D] [-e EXTRA_VARS]
+               [--vault-id VAULT_IDS] [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES] [-f FORKS]
+               [-M MODULE_PATH] [--playbook-dir BASEDIR] [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS]
+               [-m MODULE_NAME]
+               pattern
+ansible: error: ambiguous option: --ask could match --ask-become-pass, --ask-pass, --ask-vault-password, --ask-vault-pass
+
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER]
+               [-K | --become-password-file BECOME_PASSWORD_FILE] [-i INVENTORY] [--list-hosts] [-l SUBSET]
+               [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER]
+               [-c CONNECTION] [-T TIMEOUT] [--ssh-common-args SSH_COMMON_ARGS] [--sftp-extra-args SFTP_EXTRA_ARGS]
+               [--scp-extra-args SCP_EXTRA_ARGS] [--ssh-extra-args SSH_EXTRA_ARGS]
+               [-k | --connection-password-file CONNECTION_PASSWORD_FILE] [-C] [--syntax-check] [-D] [-e EXTRA_VARS]
+               [--vault-id VAULT_IDS] [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES] [-f FORKS]
+               [-M MODULE_PATH] [--playbook-dir BASEDIR] [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS]
+               [-m MODULE_NAME]
+               pattern
+
+Define and run a single task 'playbook' against a set of hosts
+
+positional arguments:
+  pattern               host pattern
+
+optional arguments:
+  --ask-vault-password, --ask-vault-pass
+                        ask for vault password
+  --become-password-file BECOME_PASSWORD_FILE, --become-pass-file BECOME_PASSWORD_FILE
+                        Become password file
+  --connection-password-file CONNECTION_PASSWORD_FILE, --conn-pass-file CONNECTION_PASSWORD_FILE
+                        Connection password file
+  --list-hosts          outputs a list of matching hosts; does not execute anything else
+  --playbook-dir BASEDIR
+                        Since this tool does not use playbooks, use this as a substitute playbook directory.This sets
+                        the relative path for many features including roles/ group_vars/ etc.
+  --syntax-check        perform a syntax check on the playbook, but do not execute it
+  --task-timeout TASK_TIMEOUT
+                        set task timeout limit in seconds, must be positive integer.
+  --vault-id VAULT_IDS  the vault identity to use
+  --vault-password-file VAULT_PASSWORD_FILES, --vault-pass-file VAULT_PASSWORD_FILES
+                        vault password file
+  --version             show program's version number, config file location, configured module search path, module
+                        location, executable location and exit
+  -B SECONDS, --background SECONDS
+                        run asynchronously, failing after X seconds (default=N/A)
+  -C, --check           don't make any changes; instead, try to predict some of the changes that may occur
+  -D, --diff            when changing (small) files and templates, show the differences in those files; works great
+                        with --check
+  -K, --ask-become-pass
+                        ask for privilege escalation password
+  -M MODULE_PATH, --module-path MODULE_PATH
+                        prepend colon-separated path(s) to module library
+                        (default=~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules)
+  -P POLL_INTERVAL, --poll POLL_INTERVAL
+                        set the poll interval if using -B (default=15)
+  -a MODULE_ARGS, --args MODULE_ARGS
+                        The action's options in space separated k=v format: -a 'opt1=val1 opt2=val2'
+  -e EXTRA_VARS, --extra-vars EXTRA_VARS
+                        set additional variables as key=value or YAML/JSON, if filename prepend with @
+  -f FORKS, --forks FORKS
+                        specify number of parallel processes to use (default=5)
+  -h, --help            show this help message and exit
+  -i INVENTORY, --inventory INVENTORY, --inventory-file INVENTORY
+                        specify inventory host path or comma separated host list. --inventory-file is deprecated
+  -k, --ask-pass        ask for connection password
+  -l SUBSET, --limit SUBSET
+                        further limit selected hosts to an additional pattern
+  -m MODULE_NAME, --module-name MODULE_NAME
+                        Name of the action to execute (default=command)
+  -o, --one-line        condense output
+  -t TREE, --tree TREE  log output to this directory
+  -v, --verbose         verbose mode (-vvv for more, -vvvv to enable connection debugging)
+
+Privilege Escalation Options:
+  control how and which user you become as on target hosts
+
+  --become-method BECOME_METHOD
+                        privilege escalation method to use (default=sudo), use `ansible-doc -t become -l` to list
+                        valid choices.
+  --become-user BECOME_USER
+                        run operations as this user (default=root)
+  -b, --become          run operations with become (does not imply password prompting)
+
+Connection Options:
+  control as whom and how to connect to hosts
+
+  --private-key PRIVATE_KEY_FILE, --key-file PRIVATE_KEY_FILE
+                        use this file to authenticate the connection
+  --scp-extra-args SCP_EXTRA_ARGS
+                        specify extra arguments to pass to scp only (e.g. -l)
+  --sftp-extra-args SFTP_EXTRA_ARGS
+                        specify extra arguments to pass to sftp only (e.g. -f, -l)
+  --ssh-common-args SSH_COMMON_ARGS
+                        specify common arguments to pass to sftp/scp/ssh (e.g. ProxyCommand)
+  --ssh-extra-args SSH_EXTRA_ARGS
+                        specify extra arguments to pass to ssh only (e.g. -R)
+  -T TIMEOUT, --timeout TIMEOUT
+                        override the connection timeout in seconds (default=10)
+  -c CONNECTION, --connection CONNECTION
+                        connection type to use (default=smart)
+  -u REMOTE_USER, --user REMOTE_USER
+                        connect as this user (default=None)
+
+Some actions do not make sense in Ad-Hoc (include, meta, etc)
+devi77@LAPTOP-18KCPA72:~$ nano details.sh
+devi77@LAPTOP-18KCPA72:~$ chmod +x details.sh
+devi77@LAPTOP-18KCPA72:~$ ./details.sh
+name=Devi ID=206297 Role=Software
+devi77@LAPTOP-18KCPA72:~$ nano odddnum.sh
+devi77@LAPTOP-18KCPA72:~$ bash +x odddnum.sh
+odd number
+15
+17
+19
+21
+23
+25
+
+devi77@LAPTOP-18KCPA72:~$ nano eveodd.sh
+devi77@LAPTOP-18KCPA72:~$ bash +x eveodd.sh
+  even or odd
+enter a value:5
+output: 5 is odd num
+devi77@LAPTOP-18KCPA72:~$ bash +x eveodd.sh
+  even or odd
+enter a value:2
+output: 2 is odd num
+devi77@LAPTOP-18KCPA72:~$ nano favfood.sh
+devi77@LAPTOP-18KCPA72:~$ bash +x favfruit.sh
+enter fruit name
+grape
+  i like grape juice
+devi77@LAPTOP-18KCPA72:~$ bash +x favfruit.sh
+enter fruit name
+gova
+i like gova gova
+devi77@LAPTOP-18KCPA72:~$ nano ifelse.sh
+devi77@LAPTOP-18KCPA72:~$ bash +x ifelse.sh
+atype the argument
+6
+Boo,they don't match:(.
+devi77@LAPTOP-18KCPA72:~$ bash +x ifelse.sh
+atype the argument
+10
+yay,they match!
+
